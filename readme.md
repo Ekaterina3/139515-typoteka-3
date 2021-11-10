@@ -1,7 +1,7 @@
 # Личный проект «Типотека» [![Build status][travis-image]][travis-url]
 
 * Студент: [Екатерина Елесова](https://up.htmlacademy.ru/nodejs/3/user/139515).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Пан](https://htmlacademy.ru/profile/id1437965).
 
 ---
 
