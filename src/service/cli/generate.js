@@ -86,15 +86,18 @@ module.exports = {
     let countMocks = Number.parseInt(count, 10) || DEFAULT_COUNT;
 
     if (countMocks > MAX_COUNT) {
-      countMocks = MAX_COUNT;
+      console.log(`Не больше ${MAX_COUNT} публикаций`)
+      process.exit(ExitCode.error);
     }
 
     const content = JSON.stringify(generateMocks(countMocks));
 
     fs.writeFile(FILE_NAME, content, (err) => {
       if (err) {
+        console.error(`Can't write data to file...`);
         process.exit(ExitCode.error);
       }
+      console.info(`Operation success. File created.`);
       process.exit(ExitCode.success);
     });
   }
